@@ -12,20 +12,25 @@ function validarControlador($controller){
       $control = new $controlador();
       return $control;
     }
-}
-
+} 
 #funcion para validar las acciones
 function validarAccion($controller, $action, $id=null){
-    if(isset($action) && method_exists($controller, $action) ){
-        if($id==null){
-            $controller->$action();  
-        }else{
-            $controller->$action($id);  
-        }
-       
+    if($controller!=""){
 
+        if(isset($action) && method_exists($controller, $action) ){
+            if($id==null){
+                $controller->$action();  
+            }else{
+                $controller->$action($id);  
+            }
+        
+
+        }else{
+            echo "No existe la funcion en la clase";
+        }
+        
     }else{
-        echo "No existe la funcion en la clase";
+        echo "error en el controller";
     }
 
 

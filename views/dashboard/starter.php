@@ -204,15 +204,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link active">
+                <a href="# " class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Active Page</p>
+                  <p>usuarios</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Inactive Page</p>
+                  <p>pacientes</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="index.php?controller=citas" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>registro citas</p>
                 </a>
               </li>
             </ul>
@@ -232,8 +238,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </div>
     <!-- /.sidebar -->
   </aside>
+   <!--aun no se q es -->
 
-  <!-- Content Wrapper. Contains page content -->
+
+   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
@@ -319,7 +327,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-
+ 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
@@ -350,5 +358,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="<?php echo BASE_URL;?>views/dashboard/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="<?php echo BASE_URL;?>views/dashboard/dist/js/adminlte.min.js"></script>
+
+
+
+
 </body>
 </html>
