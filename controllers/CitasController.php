@@ -25,6 +25,15 @@ class CitasController{
         require_once TEMPLATE;
     }
 
+    public function nuevo()
+    {
+        $data["titulo"] = "FORMULARIO DE REGISTRO DE USUARIOS";
+        $data["contenido"] = "views/citas/citas_nuevo.php";
+        require_once TEMPLATE;
+    }
+
+    
+
 
 
     

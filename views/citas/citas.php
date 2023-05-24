@@ -29,7 +29,7 @@
                 </div>
                 <div class="col-sm-4">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="index.php?c=CitasController&a=nuevo" class="btn btn-success">NUEVO REGISTRO</a></li>
+                        <li class="breadcrumb-item"><a href="index.php?controller=citas&action=nuevo" class="btn btn-success">NUEVO REGISTRO</a></li>
                     </ol>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -68,7 +68,7 @@
                                                 <td> <?php echo $row["fecha_registro"]; ?></td>
                                                 <td> <?php echo $row["horario"]; ?></td>
                                                 <td> <?php echo $row["estado"]; ?></td>
-                                                <td> <?php echo $row["update"]; ?></td>
+                                                <td> <?php echo $row["updated"]; ?></td>
                                                 <td> <a href="index.php?c=UsuarioController&a=verUsuario&id=<?php echo $row["id"]; ?>" class="btn btn-xs btn-warning"><i class="fas fa-user-edit"></i></a>
                                                     <a href="index.php?c=UsuarioController&a=eliminar&id=<?php echo $row["id"]; ?>" class="btn btn-xs btn-danger"><i class="fas fa-trash"></i></i></a>
                                                 </td>

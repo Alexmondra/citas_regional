@@ -6,7 +6,8 @@ class CitasModel
     protected $db;
     protected $citas;
 
-    public function __construct(){
+    public function __construct()
+    {
        
         $this->db = Conexion::Conexion();
         $this->citas = array();
@@ -24,6 +25,7 @@ class CitasModel
         }
         return $this->citas;
     }
+    
 
 /*
     public function save($data)

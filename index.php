@@ -2,6 +2,7 @@
 
 require_once "core/routes.php";
 require_once "config/config.php";
+require_once "config/Conexion.php";
 
 if(isset($_GET["controller"])){
     $controller = validarControlador($_GET["controller"]);
