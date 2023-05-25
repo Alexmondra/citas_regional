@@ -23,29 +23,17 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body">
-                            <form action="index.php?c=UsuarioController&a=registrar" method="POST" autocomplete="off" enctype="multipart/form-data">
+                            <form action="index.php?controller=citas&action=registrar" method="POST" autocomplete="off" enctype="multipart/form-data">
                                 <div class="form-group row justify-content-center">
-                                    <label for="staticEmail" class="col-sm-2 col-form-label">Nombres</label>
+                                    <label for="staticEmail" class="col-sm-2 col-form-label">modo</label>
                                     <div class="col-sm-5">
-                                        <input type="text" class="form-control" name="txtNombres" value="<?php echo $_REQUEST["txtNombres"]?>">
-                                        <?php if (isset($data["errores"]["nombres"])) : ?>
-                                            <div style="color:red">
-                                                <?php echo $data["errores"]["nombres"]?>
-                                            </div>
-                                        <?php endif; ?>
-
+                                        <input type="text" class="form-control" name="txtmodo" value="<?php echo $_REQUEST["txtmodo"]?>">
                                     </div>
-
                                 </div>
                                 <div class="form-group row justify-content-center">
-                                    <label for="inputPassword" class="col-sm-2 col-form-label">Apellidos:</label>
+                                    <label for="inputPassword" class="col-sm-2 col-form-label">id_paciente:</label>
                                     <div class="col-sm-5">
                                         <input type="text" class="form-control" name="txtApellidos" value="<?php echo $_REQUEST["txtApellidos"]?>">
-                                        <?php if (isset($data["errores"]["apellidos"])) : ?>
-                                            <div style="color:red">
-                                                <?php echo $data["errores"]["apellidos"]?>
-                                            </div>
-                                        <?php endif; ?>
                                     </div>
                                 </div>
                                 <div class="form-group row justify-content-center">
